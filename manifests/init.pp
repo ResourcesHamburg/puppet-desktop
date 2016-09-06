@@ -4,7 +4,7 @@ class desktop_picture (
 {
     mac_profiles_handler::manage { 'com.publicispixelpark.config.desktop':
         ensure      => 'present',
-        file_source => template('desktop_picture/com.publicispixelpark.config.desktop.mobileconfig.erb'),
+        file_source => template('com.publicispixelpark.config.desktop.mobileconfig.erb'),
         type        => 'template',
     }
 }
